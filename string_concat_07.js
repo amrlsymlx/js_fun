@@ -4,58 +4,51 @@ const age = 30;
 const test = 'Hello from Javascript';
 const courses = 'web development, web design, cloud';
 
+
 let val;
 
 val = firstName + lastName;
 
-
-// concattination
-val = firstName+' '+lastName;
+// Concatination
+val = firstName + ' ' + lastName;
 
 // Append
-val = "kim";
+val = 'Kim';
 val += 'Smith';
 
-// escaping
-val = "That's awesome";
+// Escaping
 val = 'That\'s awesome';
 
-// length
+// Length
 val = firstName.length;
 
-//change case
+// Change case
 val = firstName.toLowerCase();
 val = firstName.toUpperCase();
 
-// char at
+// Char at
 val = firstName.charAt('2');
 
-// indexOf
+// Index of
 val = firstName.indexOf('a');
-val = firstName.lastIndexOf('a');
+val = firstName.lastIndexOf('a')
 
-// substring
+// Substring
 val = firstName.substring(1,3);
 
-// slice
-val = firstName.slice(-3);
+// Slice
 val = firstName.slice(0,3);
+val = firstName.slice(-3);
 
-// split
+// Split
 val = test.split(' ');
-val = courses.split(',');
+val = courses.split(',')
 
-// replace (case sensitive)
-val = test.replace('Javascript','React.js');
+// Replace
+val = test.replace('Javascript', 'React.js');
 
-// includes (case sensitive)
-val = test.includes('Javascript')
-
-
-
-
-
-
-
+// Includes
+// val = test.includes('Javascript');
+val = test.includes('javascript');
 
 console.log(val);

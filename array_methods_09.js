@@ -1,8 +1,8 @@
 // Create some arrays
 const numbers = [43, 65, 77, 100, 1, 23];
-const numbers2=new Array(22,44,55,66,77);
+const numbers2 = new Array(22, 44, 55, 66, 77);
 const fruits = ['Apple', 'Orange', 'Kiwi', 'Peach'];
-const mix = ['hello', 3, true, undefined, {a:1,b:2}];
+const mix = ['hello', 3, true, undefined, {a:1, b:2}];
 
 let val;
 
@@ -11,68 +11,60 @@ val = numbers.length;
 val = fruits.length;
 val = mix.length;
 
-//check if array is array
+//Check if array is array
 val = Array.isArray(numbers2);
 
-//Get single value
-val = fruits[3];
-val = numbers2[3];
+// Get a single value
+val = numbers[3];
 
-//Change the value
-numbers[3]= 250;
 
-//find the index of the value
+// Change the value
+numbers[3] = 250
+
+// Find the index of the value
 val = numbers.indexOf(1);
 
-//Mutate an array
-
-//add on to the end
+// Mutate an array
+// Add on to the end
 numbers.push(777);
 
-//add to the beginning
-numbers.unshift(555);
+// Add to the beginning of array
+numbers.unshift(55);
 
-//remove from the end
+// Remove from the end
 numbers.pop();
 
-//remove from the beginning
+// Remove from the beginning
 numbers.shift();
 
 // splice
-//numbers.splice(1,4);
+// numbers.splice(1,4);
 
-//reverse
-//numbers.reverse();
+// Reverse
+// numbers.reverse();
 
-//concat
+// Concat
 val = numbers.concat(numbers2);
 
-//sort arrays
+// // Sort arrays
 // val = fruits.sort();
 // val = numbers.sort();
 
-
-//sorting an array with compare function
-
-// val = numbers.sort(function(x,y){
-//     return x-y
+// Sorting an array with compare function
+// val = numbers.sort(function(x, y){
+//     return x-y;
 // });
 
-// val = numbers.sort(function(x,y){
-//     return y-x
+// val = numbers.sort(function(x, y){
+//     return y-x;
 // });
 
-//find
-//over 50
-
-function over50(num){
-    return num >50;
-};
-
+// Find
+// over 50
+function over50(num) {
+    return num > 50;
+}
 val = numbers.find(over50);
-
-
-
 
 
 console.log(val);

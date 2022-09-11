@@ -1,15 +1,16 @@
-const color = 'red';
+const color = 'green';
 
 switch(color){
     case 'red':
         console.log('color is red');
         break;
-    case 'pink':
-        console.log('color is pink');
-        break;
     case 'green':
-        console.log('color is green');
+        console.log('Color is green');
+        break;
+    case 'pink':
+        console.log('Color is pink');
         break;
         default:
-            console.log('no valid color')
+            console.log('no valid color');
 }
+const car = 'perodua'

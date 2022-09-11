@@ -1,28 +1,26 @@
-const name = 'sara';
-const age = 30;
-const job = 'actor';
-const city = 'Kuala Lumpur';
 
+const name = 'Sara';
+const age = '30';
+const job = 'Actor';
+const city = 'Kuala Lumpur';
 let output;
 
-// without template literals
+//Without template literals
 output = '<ul>'+
-'<li>Name:'+name+'</li>'+
-'<li>Age: '+age+ '</li>'+
+'<li>Name: '+name+'</li>'+
+'<li>Age: '+age+'</li>'+
 '<li>Job: '+job+'</li>'+
 '<li>City: '+city+'</li>'+
 '</ul>';
 
-output =`<ul>
-<li>Name: &{name}</li>
-<li>Age: &{age}</li>
-<li>Job: &{job}</li>
-<li>City: &{city}</li>
+// template literals
+output = `<ul>
+<li>Name: ${name} </li>
+<li>Age: ${age} </li>
+<li>Job: ${job} </li>
+<li>City: ${city} </li>
 </ul>`;
 
 
-
-
-
-
-document.body,innerHTML=output;
+document.body.innerHTML = output;
+// console.log(output);
