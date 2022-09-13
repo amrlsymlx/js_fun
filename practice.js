@@ -1,56 +1,25 @@
-const firstName = 'Sara';
-const lastName = 'Smith';
-const age = 30;
-const test = 'Hello from javascript';
-const courses = 'web development,web design,cloud';
+const name = 'Sara';
+const age = '30';
+const job = 'Actor';
+const city = 'Kuala Lumpur';
+let output;
+
+//Without template literals
+output = '<ul>'+
+'<li>Name: '+name+'</li>'+
+'<li>Age: '+age+'</li>'+
+'<li>Job: '+job+'</li>'+
+'<li>City: '+city+'</li>'+
+'</ul>';
+
+// template literals
+output = `<ul>
+<li>Name: ${name} </li>
+<li>Age: ${age} </li>
+<li>Job: ${job} </li>
+<li>City: ${city} </li>
+</ul>`;
 
 
-let val;
-
-val = firstName +lastName;
-// no space concatination
-
-//concatination
-val = firstName+' '+lastName;
-//concatination with scpace
-
-//Append
-val = 'kim';
-val += 'Smith';
-
-// escaping
- val = 'That\'s awsome';
-
-//length
-val = firstName.length;
-
-// change case
-val = firstName.toLowerCase();
-val = firstName.toUpperCase();
-
-//char at
-val = firstName.charAt('2');
-
-//indexOf
-val = firstName.indexOf('a');
-val = firstName.lastIndexOf('a');
-
-//substring
-val =  firstName.substring(0,2);
-
-//slice
-val= firstName.slice(0,3);
- val= firstName.slice(-3);
-
-//split
-val = test.split(' ');
-val = courses.split(',');
-
-//replace (case sensetive)
-val = test.replace('javascript','React.js');
-
-
-//includes()
-val = test.includes('sara');
-
-console.log(val);
+document.body.innerHTML = output;
+// console.log(output);
