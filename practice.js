@@ -1,25 +1,69 @@
-const name = 'Sara';
-const age = '30';
-const job = 'Actor';
-const city = 'Kuala Lumpur';
-let output;
+// Create some arrays
+const numbers = [43,65,77,100,1,23];
+const numbers2=new Array(22,44,55,66,77);
+const fruits = ['Apple','Orange','Kiwi','Peach'];
+const mix = ['hello',3,true,undefined,{a:1,b:2}];
 
-//Without template literals
-output = '<ul>'+
-'<li>Name: '+name+'</li>'+
-'<li>Age: '+age+'</li>'+
-'<li>Job: '+job+'</li>'+
-'<li>City: '+city+'</li>'+
-'</ul>';
+let val;
 
-// template literals
-output = `<ul>
-<li>Name: ${name} </li>
-<li>Age: ${age} </li>
-<li>Job: ${job} </li>
-<li>City: ${city} </li>
-</ul>`;
+//Get an array length
+val = numbers.length;
+val = fruits.length;
+val = mix.length;
 
+//check if array is array 
+val = Array.isArray(numbers2);
 
-document.body.innerHTML = output;
-// console.log(output);
+//Get a single value 
+val = numbers[3];
+
+//Chnage  the value
+numbers[3]=250;
+
+//find the index of the value
+val = numbers.indexOf(1);
+
+//Mutate an array
+//add on to the end
+numbers.push(777);
+
+//add to the begining 
+numbers.unshift(55);
+
+//remove from the end
+numbers.pop();
+
+//remove from the begining
+numbers.shift();
+
+//splice
+// numbers.splice(1,4);
+
+//reverse
+// numbers.reverse();
+
+//concat
+val = numbers.concat(numbers2);
+
+//sort arrays
+val = fruits.sort();
+// val = numbers.sort();
+
+//sorting an array with compare function
+// val = numbers.sort(function(x,y){
+//     return x-y;
+// });
+
+// val = numbers.sort(function(x,y){
+//     return y-x
+// });
+
+//Find 
+// over 50 
+function over50(num){
+    return num >50;
+};
+
+val = numbers.find(over50);
+
+console.log(val);
