@@ -6,24 +6,7 @@ const mix = ['hello',3,true,undefined,{a:1,b:2}];
 
 let val;
 
-//Get an array length
-val = numbers.length;
-val = fruits.length;
-val = mix.length;
 
-//check if array is array 
-val = Array.isArray(numbers2);
-
-//Get a single value 
-val = numbers[3];
-
-//Chnage  the value
-numbers[3]=250;
-
-//find the index of the value
-val = numbers.indexOf(1);
-
-//Mutate an array
 //add on to the end
 numbers.push(777);
 
@@ -42,28 +25,29 @@ numbers.shift();
 //reverse
 // numbers.reverse();
 
+
+// console.log(numbers);
+
+
 //concat
-val = numbers.concat(numbers2);
+// val = numbers.concat(numbers2);
 
 //sort arrays
-val = fruits.sort();
+// val = fruits.sort();
 // val = numbers.sort();
 
-//sorting an array with compare function
 // val = numbers.sort(function(x,y){
 //     return x-y;
-// });
+//  });
 
-// val = numbers.sort(function(x,y){
-//     return y-x
-// });
+val = numbers.sort(function(x,y){
+    return y-x
+});
 
-//Find 
-// over 50 
-function over50(num){
-    return num >50;
-};
+// function over50(num){
+//     return num >50;
+// };
 
-val = numbers.find(over50);
+// val = numbers.find(over50);
 
 console.log(val);
