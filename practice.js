@@ -8,18 +8,20 @@ const courses = 'web development,web design,cloud';
 let val;
 
 val = firstName +lastName;
+// no space concatination
 
 //concatination
 val = firstName+' '+lastName;
+//concatination with scpace
 
 //Append
 val = 'kim';
 val += 'Smith';
 
 // escaping
-val = 'That\'s awsome';
+ val = 'That\'s awsome';
 
-//lenght
+//length
 val = firstName.length;
 
 // change case
@@ -34,18 +36,18 @@ val = firstName.indexOf('a');
 val = firstName.lastIndexOf('a');
 
 //substring
-val =  firstName.substring(1,3);
+val =  firstName.substring(0,2);
 
 //slice
 val= firstName.slice(0,3);
-val= firstName.slice(-3);
+ val= firstName.slice(-3);
 
 //split
 val = test.split(' ');
 val = courses.split(',');
 
 //replace (case sensetive)
-val = test.replace('Javascript','React.js');
+val = test.replace('javascript','React.js');
 
 
 //includes()
