@@ -10,6 +10,7 @@ let student = 'Sara';
 // initialise the variable
 let output;
 
+// let variable can be re-declared & updated
 //  output = 666;
 //  output = 777;
 
@@ -23,7 +24,7 @@ const person = 'John';
 const value = 555;
 
 /* if this line is executed will get an error because
-const value cannot be altered */
+const value cannot be re-declared & updated */
 //  person = 'Sam';
 // value= 666;
 
