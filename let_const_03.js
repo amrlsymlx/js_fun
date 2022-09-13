@@ -6,21 +6,20 @@
 
 //let keyword 
 let student = 'Sara';
-student = 'kim';
 
 // initialise the variable
 let output;
 
-console.log(output);
+console.log(output); //undefined
 console.log(student);
 
 
-// const 
+// const  
 const person = 'John';
-// const value;
+const value = 555;
 // person = 'Sam';
 console.log(person);
-// console.log(value);
+console.log(value);
 
 // multi words 
 let firstName = 'Sara';  //camelCase  *
