@@ -1,44 +1,54 @@
-// let , const 
-// How to name a variable 
-// letters , numbers , _ , $
-// variable name can not start with numbers
+const firstName = 'Sara';
+const lastName = 'Smith';
+const age = 30;
+const test = 'Hello from javascript';
+const courses = 'web development,web design,cloud';
 
 
-//let keyword 
-let student = 'Sara';
+let val;
 
-// initialise the variable
-let output;
+val = firstName +lastName;
 
-// let variable can be updated
-//  output = 666;
-//  output = 777;
+//concatination
+val = firstName+' '+lastName;
 
-// let variable canot be redeclared in the same scope
-//  let output = 666;
+//Append
+val = 'kim';
+val += 'Smith';
 
-console.log(output); /*undefined (uncomment line 13 to define and line
-14 to re-define)*/
-console.log(student);
+// escaping
+val = 'That\'s awsome';
+
+//lenght
+val = firstName.length;
+
+// change case
+val = firstName.toLowerCase();
+val = firstName.toUpperCase();
+
+//char at
+val = firstName.charAt('2');
+
+//indexOf
+val = firstName.indexOf('a');
+val = firstName.lastIndexOf('a');
+
+//substring
+val =  firstName.substring(1,3);
+
+//slice
+val= firstName.slice(0,3);
+val= firstName.slice(-3);
+
+//split
+val = test.split(' ');
+val = courses.split(',');
+
+//replace (case sensetive)
+val = test.replace('Javascript','React.js');
 
 
-// const  
-const person = 'John';
+//includes()
+val = test.includes('sara');
 
-const value = 555;
-
-/* if this line is executed will get an error because
-const value cannot be re-declared & updated */
-//  person = 'Sam';
-// value= 666;
-
-// const must have value
-// const value;
-
-console.log(person);
-console.log(value);
-
-// multi words 
-let firstName = 'Sara';  //camelCase  *
-let LastName = 'Smith';   //PascalCase
-let first_name = 'Doe';   //Underscore
+console.log(val);

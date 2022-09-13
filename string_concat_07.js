@@ -1,54 +1,54 @@
 const firstName = 'Sara';
 const lastName = 'Smith';
 const age = 30;
-const test = 'Hello from Javascript';
-const courses = 'web development, web design, cloud';
+const test = 'Hello from javascript';
+const courses = 'web development,web design,cloud';
 
 
 let val;
 
-val = firstName + lastName;
+val = firstName +lastName;
 
-// Concatination
-val = firstName + ' ' + lastName;
+//concatination
+val = firstName+' '+lastName;
 
-// Append
-val = 'Kim';
+//Append
+val = 'kim';
 val += 'Smith';
 
-// Escaping
-val = 'That\'s awesome';
+// escaping
+val = 'That\'s awsome';
 
-// Length
+//lenght
 val = firstName.length;
 
-// Change case
+// change case
 val = firstName.toLowerCase();
 val = firstName.toUpperCase();
 
-// Char at
+//char at
 val = firstName.charAt('2');
 
-// Index of
+//indexOf
 val = firstName.indexOf('a');
-val = firstName.lastIndexOf('a')
+val = firstName.lastIndexOf('a');
 
-// Substring
-val = firstName.substring(1,3);
+//substring
+val =  firstName.substring(1,3);
 
-// Slice
-val = firstName.slice(0,3);
-val = firstName.slice(-3);
+//slice
+val= firstName.slice(0,3);
+val= firstName.slice(-3);
 
-// Split
+//split
 val = test.split(' ');
-val = courses.split(',')
+val = courses.split(',');
 
-// Replace
-val = test.replace('Javascript', 'React.js');
+//replace (case sensetive)
+val = test.replace('Javascript','React.js');
 
-// Includes
-// val = test.includes('Javascript');
-val = test.includes('javascript');
+
+//includes()
+val = test.includes('sara');
 
 console.log(val);

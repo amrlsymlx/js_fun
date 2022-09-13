@@ -10,11 +10,15 @@ let student = 'Sara';
 // initialise the variable
 let output;
 
-// let variable can be re-declared & updated
+// let variable can be updated
 //  output = 666;
 //  output = 777;
 
-console.log(output); //undefined
+// let variable canot be redeclared in the same scope
+//  let output = 666;
+
+console.log(output); /*undefined (uncomment line 13 to define and line
+14 to re-define)*/
 console.log(student);
 
 
