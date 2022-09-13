@@ -19,12 +19,16 @@ console.log(student);
 
 // const  
 const person = 'John';
+
 const value = 555;
 
 /* if this line is executed will get an error because
 const value cannot be altered */
 //  person = 'Sam';
 // value= 666;
+
+// const must have value
+// const value;
 
 console.log(person);
 console.log(value);
