@@ -1,40 +1,26 @@
-// There are two main data types 
-//  primitives and refrancetype 
 
-//Primitives :
+const name = 'Sara';
+const age = '30';
+const job = 'Actor';
+const city = 'Kuala Lumpur';
+let output;
 
-//string 
-const student = 'John';
+//Without template literals
+output = '<ul>'+
+'<li>Name: '+name+'</li>'+
+'<li>Age: '+age+'</li>'+
+'<li>Job: '+job+'</li>'+
+'<li>City: '+city+'</li>'+
+'</ul>';
 
-//Number
-const age = 30;
-
-//Boolean
-const isRegistered = false;
-
-//Null
-const car = null;
-
-//undefined
-let user;
-
-//symbol()
-const sym = Symbol()
-
-//objects (refrance type)
-
-//array 
-const numbers= [1,2,3,4,5,6];
-
-//object 
-const person = {
-    firstName: 'sara',
-    lastName:'Smith'
-}
+// template literals
+output = `<ul>
+<li>Name: ${name} </li>
+<li>Age: ${age} </li>
+<li>Job: ${job} </li>
+<li>City: ${city} </li>
+</ul>`;
 
 
-
-
-
-console.log(person);
-console.log(typeof person);
+//document.body.innerHTML = output;
+console.log(output);
