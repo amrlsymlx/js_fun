@@ -17,7 +17,7 @@ val = Array.isArray(numbers2);
 //Get a single value 
 val = numbers[3];
 
-//Chnage  the value
+//Change  the value
 numbers[3]=250;
 
 //find the index of the value
