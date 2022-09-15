@@ -1,20 +1,19 @@
 let val;
 
-// Number to string
+//Number to string 
 val = String(555);
 val = String(3+5);
 
-// Boolean to string
-val = String(true);
+// Boolean to string 
+val = String (true);
 
-// toString()
+//toString()
 val = (5).toString();
 val = (false).toString();
 
-// String to number
+//string to number
 val = Number('5');
-
-// Boolean to number
+//boolean to number
 val = Number(true);
 val = Number(false);
 

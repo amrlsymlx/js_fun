@@ -1,35 +1,37 @@
-// There are two main data types
-// primitives and refrancetype
+// There are two main data types 
+//  primitives and refrancetype 
 
-// Primitives :
+//Primitives :
 
-// string
+//string 
 const student = 'John';
 
-// Number
+//Number
 const age = 30;
 
-// boolean
-const isRegistered = true;
+//Boolean
+const isRegistered = false;
 
-// Null
+//Null
 const car = null;
 
-// undefined
+//undefined
 let user;
 
-// symbol
-const sym = Symbol ();
+//symbol()
+const sym = Symbol()
 
-// Refrance type:
 
-// array
-const number = [1,2,3,4,5,6]
 
-// object
+//objects (refrance type)
+
+//array 
+const numbers= [1,2,3,4,5,6];
+
+//object 
 const person = {
     firstName: 'sara',
-    lastName: 'Smith'
+    lastName:'Smith'
 }
 
 
