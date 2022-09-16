@@ -12,4 +12,8 @@ val = today.getHours();
 
 
 
+
+
+
+
 console.log(val);
