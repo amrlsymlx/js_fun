@@ -24,7 +24,5 @@ val = Number('hello');
 
 
 
-
-
 console.log(val);
 console.log(typeof val);
